@@ -54,7 +54,7 @@ cp -r TTPHPServer im
 zip -r im.zip im
 cp -r im.zip TTAutoDeploy/TT/im_web
 
-cd TTServer/cpp
+cd TTServer/cpp/src
 ./build.sh version 1.0
 
 cd ../..
