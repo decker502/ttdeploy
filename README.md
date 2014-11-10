@@ -54,6 +54,10 @@ cp -r TTPHPServer im
 zip -r im.zip im
 cp -r im.zip TTAutoDeploy/TT/im_web
 
+cd TTServer/cpp
+./build.sh version 1.0
+
+cd ../..
 cp TTServer/cpp/im-server-1.0.tar.gz TTAutoDeploy/TT/im_server
 
 cp jdk-7u71-linux-x64.rpm TTAutoDeploy/TT/jdk
