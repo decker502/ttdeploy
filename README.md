@@ -25,7 +25,7 @@ git clone https://github.com/mogutt/TTAutoDeploy
 
 git clone https://github.com/lanbeilyj/TTServer
 
-git cloen https://github.com/mogutt/TTPHPServer
+git clone https://github.com/mogutt/TTPHPServer
 ````
 
 WinClient：
