@@ -95,3 +95,12 @@ sh setup.sh check
 sh setup.sh install
 
 如果中间没报错，大功告成！
+
+
+# 善后
+
+登录管理系统
+
+登录帐号是： admin:admin
+
+系统配置里的2个ip需要改为实际ip, 一定要写端口号
