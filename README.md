@@ -102,13 +102,13 @@ sh setup.sh install
 
 1. 解决上传图片的权限问题
 
-mkdir /var/www/html/im/TT/uploadImage
+	mkdir /var/www/html/im/TT/uploadImage
 
-chown -R nobody.nobody /var/www/html/im
+	chown -R nobody.nobody /var/www/html/im
 
 2. 解决不能收发文件的问题：
 
-编辑fileserver的配置文件， ip一行要改为   
+	编辑fileserver的配置文件， ip一行要改为   
 
 	Address=xxx.xxx.xxx.xxx   (注意不要用 0.0.0.0)
 
@@ -125,7 +125,7 @@ chown -R nobody.nobody /var/www/html/im
 
 1. winclient会报组件注册错误
 
-register dll failed,D:\project\teamtalk\TeamTalk\bin\\GifSmiley.dll
+	register dll failed,D:\project\teamtalk\TeamTalk\bin\\GifSmiley.dll
 
 2. 新建讨论组时确定按钮点击没反应
 
