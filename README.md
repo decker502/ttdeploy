@@ -79,8 +79,9 @@ cp jdk-7u71-linux-x64.rpm TTAutoDeploy/TT/jdk
 
 	第26行改为 sh startup.sh $LISTEN_PORT
 
-
 修改数据库记录：
+	alter table IMConfig modify value char(40);
+	update IMConfig set value = '你的ip:8500';
 
 	update IMUsers set id=10000 where id=10035;
 
@@ -99,8 +100,24 @@ sh setup.sh install
 
 # 善后
 
+1. 解决上传图片的权限问题
+
+mkdir /var/www/html/im/TT/uploadImage
+
+chown -R nobody.nobody /var/www/html/im
+
+2. 解决不能收发文件的问题：
+
+编辑fileserver的配置文件， ip一行要改为   
+
+	Address=xxx.xxx.xxx.xxx   (注意不要用 0.0.0.0)
+
+
+3. 修改系统配置
+
 登录管理系统
 
 登录帐号是： admin:admin
 
 系统配置里的2个ip需要改为实际ip, 一定要写端口号
+
