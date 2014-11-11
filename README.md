@@ -121,3 +121,12 @@ chown -R nobody.nobody /var/www/html/im
 
 系统配置里的2个ip需要改为实际ip, 一定要写端口号
 
+# 存在的问题
+
+1. winclient会报组件注册错误
+
+register dll failed,D:\project\teamtalk\TeamTalk\bin\\GifSmiley.dll
+
+2. 新建讨论组时确定按钮点击没反应
+
+3. 管理系统添加成员总是失败（添加失败,请添加完整信息）
