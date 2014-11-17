@@ -77,10 +77,12 @@ cp jdk-7u71-linux-x64.rpm TTAutoDeploy/TT/jdk
 
 编辑 TTAutoDeploy/TT/im_db_proxy/setup.sh
 
-	第26行改为 sh startup.sh $LISTEN_PORT
+	第62行改为 sh startup.sh $LISTEN_PORT
 
 修改数据库记录：
+
 	alter table IMConfig modify value char(40);
+	
 	update IMConfig set value = '你的ip:8500';
 
 	update IMUsers set id=10000 where id=10035;
