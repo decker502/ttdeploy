@@ -78,6 +78,9 @@ cp jdk-7u71-linux-x64.rpm TTAutoDeploy/TT/jdk
 编辑 TTAutoDeploy/TT/im_db_proxy/setup.sh
 
 	第26行改为 sh startup.sh $LISTEN_PORT
+	
+编辑 TTAutoDeploy/TT/redis/setup.sh
+	第109行 将$MAKE 改为 $MAKE MALLOC=libc
 
 修改数据库记录：
 	alter table IMConfig modify value char(40);
